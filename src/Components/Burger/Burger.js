@@ -6,13 +6,12 @@ import React from 'react';
 import classes from './Burger.css';
 import BurgerIngredient from './BurgerIngredient/BurgerIngredient';
 import uniqid from 'uniqid';
-
 const burger = (props) => {
     console.log('Ingredients to render ', props);
     const transformedIngredients = Object.keys(props.ingredients)
         .map(key => {
             return [...Array(props.ingredients[key])].map((_, i) => {
-                return (<BurgerIngredient key={uniqid()} type={key} />);
+                return (<BurgerIngredient key={uniqid ()} type={key} />);
             });
         })
         .reduce((arr, el) => {
