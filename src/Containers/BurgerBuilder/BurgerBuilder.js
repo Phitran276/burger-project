@@ -121,6 +121,7 @@ class BurgerBuilder extends Component {
         if (this.props.ings) {
             burger = (
                 <Aux>
+                    <h1></h1>
                     <Burger ingredients={this.props.ings} />
                     <BuildControls addIng={this.props.onIngredientAdded} 
                         removeIng={this.props.onIngredientRemoved} 
